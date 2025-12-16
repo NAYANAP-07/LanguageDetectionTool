@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Language Detection Tool</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Language Detection Tool</h1>
+
+      <!-- Text Detection -->
+      <div class="card">
+        <h2>Detect Language from Text</h2>
+        <textarea id="text-input" placeholder="Enter text here"></textarea>
+        <button onclick="detectText()">Detect</button>
+        <p id="text-result"></p>
+      </div>
+
+      <!-- Image Detection -->
+      <div class="card">
+        <h2>Detect Language from Image</h2>
+        <input type="file" id="image-input" accept="image/*" />
+        <button onclick="detectImage()">Detect</button>
+        <p id="image-result"></p>
+      </div>
+
+      <!-- Audio Detection -->
+      <div class="card">
+        <h2>Detect Language from Audio</h2>
+        <button onclick="startRecording()">Start Recording</button>
+        <button onclick="stopRecording()">Stop Recording</button>
+        <p id="audio-result"></p>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
