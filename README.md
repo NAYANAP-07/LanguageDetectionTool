@@ -1,9 +1,3 @@
-Sure 🙂
-Below is the **README content in plain text format** (NOT in code blocks).
-You can paste this directly into a README file or convert it to markdown later.
-
----
-
 LANGUAGE DETECTION TOOL
 
 Overview
@@ -119,4 +113,3 @@ This project is licensed under the MIT License.
 
 ---
 
-If you want, I can also shorten this for **college submission**, **resume**, or **GitHub description**—just tell me 👍
